@@ -1,0 +1,42 @@
+@media screen and (max-width: 1100px){
+    
+
+.navbar{
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    line-height: 50px;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.post{
+    flex-direction: column;
+    /* line-height: 20px; */
+}
+
+.contents .post .text{
+    position: relative;
+    right: 15px;
+}
+
+.contents .post .text .top{
+    padding-bottom: 10px;
+}
+
+.contents .post .text .mid{
+    padding-bottom: 10px;
+}
+
+.sidebars .post .text{
+    position: relative;
+    right: 8px;
+}
+
+.sidebars .post .text a{
+    padding: 8px 0px;
+}
+
+}

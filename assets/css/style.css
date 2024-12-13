@@ -210,7 +210,7 @@ li{
     grid-area: main-content;
     border-right: 1px solid #eee;
     margin: 10px 15px;
-    height: 200vh;
+    height: 1100px;
     overflow: auto;
     scrollbar-width: none;
 }
@@ -348,7 +348,7 @@ li{
 .sidebar{
     grid-area: sidebar;
     margin: 10px 10px;
-    height: 200vh;
+    height: 1100px;
     overflow: auto;
     scrollbar-width: none;
 }
@@ -358,7 +358,7 @@ li{
     font-size: large;
     letter-spacing: 1.3px;
     line-height: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 20px;
 }
 
 .sidebar .header p{
@@ -472,7 +472,8 @@ li{
 
 .sidebars .tags .list{
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    /* flex-wrap: wrap; */
     line-height: 50px;
     font-weight: bold;
     justify-content: space-between;

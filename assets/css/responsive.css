@@ -9,12 +9,18 @@
 
 .categories{
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+    justify-content: space-around;
 }
 
 .post{
     flex-direction: column;
     /* line-height: 20px; */
+}
+
+.contents .post img{
+    width: 250px;
+    height: 150px;
 }
 
 .contents .post .text{
@@ -39,4 +45,16 @@
     padding: 8px 0px;
 }
 
+}
+
+@media screen and (max-width:600px){
+    .footer-area .main-footer{
+        display: grid;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-area .main-footer h3{
+        text-align: center;
+    }
 }

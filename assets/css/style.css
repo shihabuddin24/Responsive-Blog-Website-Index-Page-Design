@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body{
+    touch-action: manipulation;
     display: grid;
     grid-template-areas: 
     'navbar navbar navbar'
@@ -518,16 +524,17 @@ li{
 .main-footer .menu li , .main-footer .follow-us li{
     line-height: 35px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .main-footer .menu li:hover , .main-footer .follow-us li:hover{
-    transform: scale(1.07);
+    transform: scale(1.05);
+    letter-spacing: 2px;
 }
 
 .main-footer .menu a , .main-footer .follow-us a{
     color: rgb(211, 211, 211);
-    letter-spacing: 0.4px;
+    letter-spacing: 2px;
     transition: all 0.4s ease;
 }
 
